@@ -1,0 +1,17 @@
+[package]
+name = "aumm_core"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Abstract Universal Macro Model core: gesture recognizer, bindings, and macro executor."
+repository = ""
+readme = "README.md"
+
+[dependencies]
+thiserror = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+hashbrown = "0.14"
+
+[dev-dependencies]
+pretty_assertions = "1.4"

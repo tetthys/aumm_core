@@ -1,0 +1,43 @@
+# ============================================
+# Rust / Cargo project .gitignore
+# ============================================
+
+# --- Build artifacts ---
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# --- IDE / Editor junk ---
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+.DS_Store
+
+# --- Logs / temporary files ---
+*.log
+*.tmp
+*.bak
+*.old
+
+# --- Tests / coverage / profiling ---
+/coverage/
+.profraw
+.profdata
+/benchmarks/
+test-output/
+*.gcda
+*.gcno
+
+# --- OS-specific ---
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# --- Custom project outputs ---
+/dist/
+/build/
+/artifacts/
+/aumm_core.zip
