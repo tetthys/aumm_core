@@ -2,16 +2,31 @@
 name = "aumm_core"
 version = "0.1.0"
 edition = "2021"
-license = "MIT"
-description = "Abstract Universal Macro Model core: gesture recognizer, bindings, and macro executor."
-repository = ""
+description = "Abstract Universal Macro Model core: deterministic gesture recognition and macro execution."
 readme = "README.md"
+license = "MIT"
+repository = "https://github.com/tetthys/aumm_core"
+homepage = "https://github.com/tetthys/aumm_core"
+documentation = "https://docs.rs/aumm_core"
+keywords = [ "macro", "gesture", "input", "hid", "state-machine" ]
+categories = [ "algorithms", "no-std", "command-line-utilities" ]
+authors = [ "tetthys <jeongwoo0830z@gmail.com>" ]
+include = [
+  "Cargo.toml",
+  "README.md",
+  "LICENSE*",
+  "src/**/*",
+  "tests/**/*"
+]
 
 [dependencies]
 thiserror = "1.0"
-serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 hashbrown = "0.14"
+
+  [dependencies.serde]
+  version = "1.0"
+  features = [ "derive" ]
 
 [dev-dependencies]
 pretty_assertions = "1.4"
